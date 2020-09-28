@@ -1,4 +1,93 @@
-.App {
-    background: url('../assets/img/hero.gif');
-    background-size: cover;
+/* REUSABLE COMPONENTS */
+.card {
+  max-width: 18rem;
+}
+
+.border-php {
+  border-color: #787cb5;
+}
+
+.text-php {
+  color: #787cb5;
+}
+
+.border-bootstrap {
+  border-color: #7952b3;
+}
+
+.text-bootstrap {
+  color: #7952b3;
+}
+
+.border-mysql {
+  border-color: #f29111;
+}
+
+.text-mysql {
+  color: #f29111;
+}
+
+.border-node {
+  border-color: #3C873A;
+}
+
+.text-node {
+  color: #4DB33D;
+}
+
+.border-react {
+  border-color: #61DBFB;
+}
+
+.text-react {
+  color: #61DBFB;
+}
+
+.bg-react {
+  background-color: #20232a;
+}
+/* LANDING PAGE */
+.devmode {
+  background: url("../assets/img/devmode.gif");
+  background-size: cover;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/hero.jpg");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Tomatoes;
+  src: url("../assets/fonts/Tomatoes-O8L8.ttf");
+}
+
+.blockquote {
+  margin-top: 20%;
+  transform: translateY(-20%);
+  font-family: Tomatoes;
+  font-size: 200%;
+}
+
+.blockquote-footer {
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+/* PROFILE SECTION */
+
+.profile-content-right {
+  margin-top: 12px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience {
+  background: linear-gradient(rgba(209, 209, 209, 0.2), rgba(0, 0, 0, 0.2));
 }

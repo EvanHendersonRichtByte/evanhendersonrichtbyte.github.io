@@ -2,12 +2,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <a class="navbar-brand text-secondary" href="/">
-        {" "}
+    <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a className="navbar-brand text-white-50" href="/">
+        Hender's Web
       </a>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -15,30 +15,33 @@ const Header = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
         <div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Profile
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Experience
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Projects
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                Location
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Contact
               </a>
             </li>
           </ul>
