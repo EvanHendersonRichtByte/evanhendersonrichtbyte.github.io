@@ -1,6 +1,6 @@
 import React from "react";
-import BlockQuote from "./BlockQuote";
-import Header from "./Header";
+import BlockQuote from "../components/BlockQuote";
+import Header from "../components/Header";
 
 const Hero = () => {
   return (

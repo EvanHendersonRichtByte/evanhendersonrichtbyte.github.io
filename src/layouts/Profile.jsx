@@ -4,10 +4,10 @@ const Profile = (props) => {
   return (
     <div className="profile container text-center my-4">
       <div className="profile-header ">
-        <h3 className="text-bootstrap">About Me</h3>
-        <hr className="border-bootstrap" />
+        <h3 className="text-main">About Me</h3>
+        <hr className="border-main"/>
         <img
-          className="profile-image rounded-circle"
+          className="profile-image rounded-circle my-3"
           src={props.image}
           alt="Me"
         />
