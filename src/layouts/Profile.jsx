@@ -56,7 +56,7 @@ const Profile = (props) => {
                 </tr>
                 <tr>
                   <th>Address:</th>
-                  <td>Jl. Wendit Barat no.18, Malang, East Java, Indonesia</td>
+                  <td>29.116435, -57.918038</td>
                 </tr>
                 <tr>
                   <th>Phone:</th>

@@ -53,7 +53,7 @@ const Contact = () => {
                             <td>
                               <VscLocation className="text-main" />
                             </td>
-                            <td>Indonesia</td>
+                            <td>29.116435, -57.918038</td>
                           </tr>
                         </tbody>
                       </EmailAnim>
