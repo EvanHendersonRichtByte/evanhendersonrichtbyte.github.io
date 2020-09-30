@@ -1,5 +1,8 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import $ from "jquery";
+import styled, { keyframes } from "styled-components";
+import { fadeIn } from "react-animations";
+
 const ExperienceCard = (props) => {
   useEffect(() => {
     $(".exp-card").hover(
@@ -13,8 +16,12 @@ const ExperienceCard = (props) => {
       }
     );
   });
+  const ProjAnim = keyframes`${fadeIn}`;
+  const ProjectsAnim = styled.div`
+    animation: 2s ${ProjAnim};
+  `;
   return (
-    <Fragment>
+    <ProjectsAnim>
       <div className="card bg-transparent border-0 m-5 d-flex justify-content-center align-items-center exp-card">
         <div className="card-body">
           {props.expAlt === "Laravel Logo" ||
@@ -33,7 +40,7 @@ const ExperienceCard = (props) => {
           <p className="text-center">{props.expDesc}</p>
         </div>
       </div>
-    </Fragment>
+    </ProjectsAnim>
   );
 };
 

@@ -60,6 +60,14 @@
   background: #555;
 }
 
+.cover {
+  z-index: 1;
+}
+
+.cover-hidden {
+  display: none;
+}
+
 /* LANDING PAGE */
 .devmode {
   background: url("../assets/img/devmode.gif");
@@ -77,6 +85,11 @@
   src: url("../assets/fonts/Tomatoes-O8L8.ttf");
 }
 
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("../assets/fonts/IBMPlexSerif-Light.ttf");
+}
+
 .blockquote {
   margin-top: 20%;
   transform: translateY(-20%);
@@ -86,9 +99,12 @@
 
 .blockquote-footer {
   margin-top: 10px;
-  font-family: sans-serif;
+  font-family: IBMPlexSerif;
 }
 
+.blockquote-footer::before {
+  display: none;
+}
 /* PROFILE SECTION */
 
 .profile-content-right {
@@ -96,8 +112,7 @@
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  height: 350px;
 }
 
 /* EXPERIENCE SECTION */

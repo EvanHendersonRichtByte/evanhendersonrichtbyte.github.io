@@ -1,39 +1,50 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Waypoint } from "react-waypoint";
+import { slideInLeft, fadeInRight } from "react-animations";
+import styled, { keyframes } from "styled-components";
+import Avatar from "../assets/img/avatar.jpg";
 const Profile = (props) => {
+  const [imageTrigger, setImageTrigger] = useState("");
+  const [paragraphTrigger, setParagraphTrigger] = useState("");
+  const handleWaypointEnter = () => {
+    setImageTrigger("yes");
+    setParagraphTrigger("yes");
+  };
+  const slideInL = keyframes`${slideInLeft}`;
+  const LeftImageAnim = styled.div`
+    animation: 2s ${slideInL};
+  `;
+  const fadeInR = keyframes`${fadeInRight}`;
+  const RightParagraphAnim = styled.div`
+    animation: 2s ${fadeInR};
+  `;
   return (
     <div className="profile container text-center my-4">
+      <Waypoint onEnter={handleWaypointEnter} />
       <div className="profile-header ">
         <h3 className="text-main">About Me</h3>
-        <hr className="border-main"/>
-        <img
-          className="profile-image rounded-circle my-3"
-          src={props.image}
-          alt="Me"
-        />
+        <hr className="border-main" />
       </div>
       <div className="profile-content container">
         <div className="row">
-          <div className="profile-content-left col-md-6">
-            <p className="pt-4 text-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              interdum mi velit, ut viverra odio maximus a. Maecenas non feugiat
-              nibh. Mauris vitae elementum tellus, et ornare mauris. Praesent
-              semper placerat dictum. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Curabitur iaculis
-              dolor nunc, ac congue justo volutpat non. Donec dignissim dui leo,
-              vel pulvinar tellus bibendum eu. Aenean eros enim, laoreet id
-              dapibus in, porttitor at nibh. Pellentesque efficitur, nisi nec
-              facilisis bibendum, urna felis ultricies odio, id faucibus nulla
-              lectus a neque.
-            </p>
-          </div>
-          <div className="profile-content-right col-md-6">
+          {imageTrigger === "yes" && (
+            <LeftImageAnim>
+              <div className="profile-content-left col-md-4">
+                <img
+                  className="profile-image rounded mt-4"
+                  src={Avatar}
+                  alt="Me"
+                />
+              </div>
+            </LeftImageAnim>
+          )}
+
+          <div className="profile-content-right col-md-8">
             <table className="table table-borderless text-left">
               <tbody>
                 <tr>
                   <th>Name:</th>
-                  <td>Galur Arasy Lumintang</td>
+                  <td>Evan Henderson RichtByte</td>
                 </tr>
                 <tr>
                   <th>Date of Birth:</th>
@@ -49,10 +60,22 @@ const Profile = (props) => {
                 </tr>
                 <tr>
                   <th>Phone:</th>
-                  <td>+62 82141413537</td>
+                  <td>+62 8214141xxxx</td>
                 </tr>
               </tbody>
             </table>
+            {paragraphTrigger === "yes" && (
+              <RightParagraphAnim>
+                <p className="pt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  interdum mi velit, ut viverra odio maximus a. Maecenas non
+                  feugiat nibh. Mauris vitae elementum tellus, et ornare mauris.
+                  Praesent semper placerat dictum. Orci varius natoque penatibus
+                  et magnis dis parturient montes, nascetur ridiculus mus.
+                  Curabitur iaculis dolor nunc,
+                </p>
+              </RightParagraphAnim>
+            )}
           </div>
         </div>
       </div>
