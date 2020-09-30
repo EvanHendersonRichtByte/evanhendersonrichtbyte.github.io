@@ -1,26 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.485ffcac.chunk.css",
-    "main.js": "/static/js/main.fcd41b8d.chunk.js",
-    "main.js.map": "/static/js/main.fcd41b8d.chunk.js.map",
+    "main.css": "/static/css/main.1fe6ba8d.chunk.css",
+    "main.js": "/static/js/main.eda49ed2.chunk.js",
+    "main.js.map": "/static/js/main.eda49ed2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.27d26031.js",
     "runtime-main.js.map": "/static/js/runtime-main.27d26031.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.98b6786e.chunk.js": "/static/js/2.98b6786e.chunk.js",
-    "static/js/2.98b6786e.chunk.js.map": "/static/js/2.98b6786e.chunk.js.map",
+    "static/js/2.f40df60a.chunk.js": "/static/js/2.f40df60a.chunk.js",
+    "static/js/2.f40df60a.chunk.js.map": "/static/js/2.f40df60a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9c718eb67a2fdf9d7fde91f299de376e.js": "/precache-manifest.9c718eb67a2fdf9d7fde91f299de376e.js",
+    "precache-manifest.55ef0dcc668d5fb828463476516fc43f.js": "/precache-manifest.55ef0dcc668d5fb828463476516fc43f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.485ffcac.chunk.css.map": "/static/css/main.485ffcac.chunk.css.map",
-    "static/js/2.98b6786e.chunk.js.LICENSE.txt": "/static/js/2.98b6786e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/hero.8acf7094.gif"
+    "static/css/main.1fe6ba8d.chunk.css.map": "/static/css/main.1fe6ba8d.chunk.css.map",
+    "static/js/2.f40df60a.chunk.js.LICENSE.txt": "/static/js/2.f40df60a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/hero.45253a7b.jpg",
+    "static/media/admindashboard.png": "/static/media/admindashboard.9c248bc1.png",
+    "static/media/avatar.jpg": "/static/media/avatar.add17743.jpg",
+    "static/media/bootstrap.png": "/static/media/bootstrap.f93583ea.png",
+    "static/media/carrental.jpg": "/static/media/carrental.05991cdc.jpg",
+    "static/media/ecommerce.png": "/static/media/ecommerce.7eced192.png",
+    "static/media/furniture.jpg": "/static/media/furniture.6d139f76.jpg",
+    "static/media/laravel.png": "/static/media/laravel.6ab5414e.png",
+    "static/media/library.jpg": "/static/media/library.7467f83d.jpg",
+    "static/media/mongodb.png": "/static/media/mongodb.277d2522.png",
+    "static/media/mysql.png": "/static/media/mysql.9abfc316.png",
+    "static/media/nodejs.png": "/static/media/nodejs.f9f5d492.png",
+    "static/media/php.png": "/static/media/php.b187e3b1.png",
+    "static/media/react.png": "/static/media/react.e1eb5856.png"
   },
   "entrypoints": [
     "static/js/runtime-main.27d26031.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.98b6786e.chunk.js",
-    "static/css/main.485ffcac.chunk.css",
-    "static/js/main.fcd41b8d.chunk.js"
+    "static/js/2.f40df60a.chunk.js",
+    "static/css/main.1fe6ba8d.chunk.css",
+    "static/js/main.eda49ed2.chunk.js"
   ]
 }

@@ -1,1 +1,0 @@
-{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACI,+CAAA,CACA,qBACJ","file":"main.485ffcac.chunk.css","sourcesContent":[".App {\r\n    background: url('../assets/img/hero.gif');\r\n    background-size: cover;\r\n}\r\n"]}
