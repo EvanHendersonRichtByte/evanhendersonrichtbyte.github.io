@@ -60,12 +60,46 @@
   background: #555;
 }
 
-.cover {
+.section-cover {
   z-index: 1;
 }
 
 .cover-hidden {
   display: none;
+}
+
+/* Loader */
+@keyframes animLoader {
+  0% {
+    color: red;
+  }
+  
+  50% {
+    color: cyan;
+  }
+ 
+  100% {
+    color: purple;
+  }
+}
+
+.section-loader {
+  background-image: linear-gradient(to right bottom, blue, pink),
+    url(../assets/img/loader.jpg);
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  animation: animLoader 2s infinite;
+}
+
+.section-loader code {
+  color: #fff;
+  animation: animLoader 2s infinite;
 }
 
 /* LANDING PAGE */
@@ -117,7 +151,7 @@
 
 /* EXPERIENCE SECTION */
 
-.experience {
+.section-experience {
   background: rgba(224, 224, 224, 0.2);
 }
 

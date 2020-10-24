@@ -19,7 +19,7 @@ const Profile = (props) => {
     animation: 2s ${fadeInR};
   `;
   return (
-    <div className="profile container text-center my-4">
+    <section className="section-profile container text-center my-4">
       <Waypoint onEnter={handleWaypointEnter} />
       <div className="profile-header ">
         <h3 className="text-main">About Me</h3>
@@ -79,7 +79,7 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

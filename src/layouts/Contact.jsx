@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiFacebook, FiSmartphone, FiTwitter } from "react-icons/fi";
 import { AiOutlineGithub } from "react-icons/ai";
@@ -17,7 +17,7 @@ const Contact = () => {
     animation: 1.5s ${EmailAnimR};
   `;
   return (
-    <Fragment>
+    <section className="section-contact">
       <div className="contact container-fluid bg-light">
         <Waypoint onEnter={handleWaypointEnter} />
         <div className="container">
@@ -133,7 +133,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 };
 
