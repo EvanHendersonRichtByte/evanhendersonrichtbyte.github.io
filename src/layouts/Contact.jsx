@@ -6,16 +6,41 @@ import { VscLocation } from "react-icons/vsc";
 import { Waypoint } from "react-waypoint";
 import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
+import { init, send } from "emailjs-com";
 
 const Contact = () => {
+  // ? State Declaration
+  const [state, setState] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+    to_name: "Evan Henderson",
+    reply_to: "No one",
+  });
+  const { user_name, user_email, message } = state;
   const [contactTrigger, setContactTrigger] = useState("");
-  const handleWaypointEnter = () => {
-    setContactTrigger("yes");
-  };
+  // ! Function and Anim Declaration
+  const handleInput = (e) =>
+    setState({ ...state, [e.target.name]: e.target.value });
+  const handleWaypointEnter = () => setContactTrigger("yes");
+
   const EmailAnimR = keyframes`${pulse}`;
   const EmailAnim = styled.td`
     animation: 1.5s ${EmailAnimR};
   `;
+  // * EmailJS Integration
+  init("user_9rgWJ9bLGKwR8ijemGaxL");
+  let templateParams = { user_name, user_email, message };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    send("service_wwffwm4", "template_hknpbnd", templateParams).then(
+      (res) => {
+        console.log("Success!", res.status);
+        window.location.reload()
+      },
+      (err) => console.log("Failed", err)
+    );
+  };
   return (
     <section id="section-contact" className="section-contact">
       <div className="contact container-fluid bg-light">
@@ -62,29 +87,39 @@ const Contact = () => {
                 </div>
                 <div className="col-md-4 offset-md-1 bg-light">
                   <h3 className="mb-3">SAY SOMETHING</h3>
-                  <form action="/" className="form shadow-lg">
+                  <form onSubmit={handleSubmit} className="form shadow-lg">
                     <div className="form-group">
                       <input
                         type="text"
+                        name="user_name"
                         className="form-control border-main"
-                        defaultValue="Your Name..."
+                        value={user_name}
+                        placeholder="Your Name"
+                        onChange={handleInput}
+                        required
                       />
                     </div>
                     <div className="form-group">
                       <input
-                        type="text"
+                        type="email"
+                        name="user_email"
                         className="form-control border-main"
-                        defaultValue="Your Mail..."
+                        placeholder="Your Email"
+                        value={user_email}
+                        onChange={handleInput}
+                        required
                       />
                     </div>
                     <div className="form-group">
                       <textarea
-                        name=""
-                        id=""
+                        name="message"
                         cols="30"
                         rows="10"
                         className="form-control border-main"
-                        defaultValue="Message..."
+                        value={message}
+                        onChange={handleInput}
+                        placeholder="Message..."
+                        required
                       ></textarea>
                     </div>
                     <div className="form-group">
