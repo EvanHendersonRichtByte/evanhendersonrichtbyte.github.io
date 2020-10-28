@@ -17,7 +17,7 @@ const Contact = () => {
     animation: 1.5s ${EmailAnimR};
   `;
   return (
-    <section className="section-contact">
+    <section id="section-contact" className="section-contact">
       <div className="contact container-fluid bg-light">
         <Waypoint onEnter={handleWaypointEnter} />
         <div className="container">

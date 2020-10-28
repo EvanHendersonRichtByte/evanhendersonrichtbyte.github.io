@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import { slideInLeft, fadeInRight } from "react-animations";
 import styled, { keyframes } from "styled-components";
-import Avatar from "../assets/img/avatar.jpg";
+import Avatar from "../assets/img/person.jpg";
 const Profile = (props) => {
   const [imageTrigger, setImageTrigger] = useState("");
   const [paragraphTrigger, setParagraphTrigger] = useState("");
@@ -19,7 +19,7 @@ const Profile = (props) => {
     animation: 2s ${fadeInR};
   `;
   return (
-    <section className="section-profile container text-center my-4">
+    <section id="section-profile" className="section-profile container text-center my-4">
       <Waypoint onEnter={handleWaypointEnter} />
       <div className="profile-header ">
         <h3 className="text-main">About Me</h3>
@@ -44,7 +44,7 @@ const Profile = (props) => {
               <tbody>
                 <tr>
                   <th>Name:</th>
-                  <td>Evan Henderson RichtByte</td>
+                  <td>Evan Henderson</td>
                 </tr>
                 <tr>
                   <th>Date of Birth:</th>

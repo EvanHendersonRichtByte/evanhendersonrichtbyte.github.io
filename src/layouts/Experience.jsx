@@ -9,7 +9,7 @@ import BootstrapLogo from "../assets/logo/bootstrap.png";
 import ExperienceCard from "../components/ExperienceCard";
 const Experience = () => {
   return (
-    <section className="section-experience container-fluid shadow p-4">
+    <section id="section-experience" className="section-experience container-fluid shadow p-4">
       <div className="container">
         <h3 className="text-main text-center my-3">Experiences</h3>
         <hr className="border-main" />

@@ -11,6 +11,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./style/App.css";
 function App() {
+  // $(document).ready(() => {
+  //   const style = getComputedStyle(
+  //     document.querySelector("html")
+  //   ).getPropertyValue("--main-color");
+  //   console.log(style);
+  //   document.documentElement.style.setProperty('--main-color', ' rgb(160, 6, 6)')
+  // });
   return (
     <Fragment>
       {$(document).ready() ? (

@@ -27,7 +27,7 @@ const Projects = () => {
     animation: 1.5s ${ProjAnimC};
   `;
   return (
-    <section className="section-projects container mt-4">
+    <section id="section-projects" className="section-projects container mt-4">
       <Waypoint onEnter={handleWaypointEnter} />
       <h3 className="text-center text-main">Projects</h3>
       <hr className="border-main" />

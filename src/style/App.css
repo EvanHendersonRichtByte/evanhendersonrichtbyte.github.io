@@ -1,6 +1,11 @@
 :root {
   --main-color: rgba(111, 0, 255, 0.651);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* REUSABLE COMPONENTS */
 .card {
   max-width: 18rem;
@@ -30,7 +35,7 @@
 
 .btn-main {
   background-color: var(--main-color);
-  color: #fff;
+  color:#fff;
 }
 
 .footer-icon {
@@ -73,11 +78,11 @@
   0% {
     color: red;
   }
-  
+
   50% {
     color: cyan;
   }
- 
+
   100% {
     color: purple;
   }
