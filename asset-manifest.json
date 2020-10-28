@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b897fa87.chunk.css",
-    "main.js": "/static/js/main.79e57eab.chunk.js",
-    "main.js.map": "/static/js/main.79e57eab.chunk.js.map",
+    "main.css": "/static/css/main.85f9f433.chunk.css",
+    "main.js": "/static/js/main.cfbe7f40.chunk.js",
+    "main.js.map": "/static/js/main.cfbe7f40.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.27d26031.js",
     "runtime-main.js.map": "/static/js/runtime-main.27d26031.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.f40df60a.chunk.js": "/static/js/2.f40df60a.chunk.js",
     "static/js/2.f40df60a.chunk.js.map": "/static/js/2.f40df60a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e0dddc1cf970d630673b65a698bb1183.js": "/precache-manifest.e0dddc1cf970d630673b65a698bb1183.js",
+    "precache-manifest.efc86d115619414fd92607be64d6cfef.js": "/precache-manifest.efc86d115619414fd92607be64d6cfef.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.b897fa87.chunk.css.map": "/static/css/main.b897fa87.chunk.css.map",
+    "static/css/main.85f9f433.chunk.css.map": "/static/css/main.85f9f433.chunk.css.map",
     "static/js/2.f40df60a.chunk.js.LICENSE.txt": "/static/js/2.f40df60a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/loader.41aa88e4.jpg",
     "static/media/admindashboard.png": "/static/media/admindashboard.9c248bc1.png",
-    "static/media/avatar.jpg": "/static/media/avatar.add17743.jpg",
     "static/media/bootstrap.png": "/static/media/bootstrap.f93583ea.png",
     "static/media/carrental.jpg": "/static/media/carrental.05991cdc.jpg",
     "static/media/ecommerce.png": "/static/media/ecommerce.7eced192.png",
@@ -26,6 +25,7 @@
     "static/media/mongodb.png": "/static/media/mongodb.277d2522.png",
     "static/media/mysql.png": "/static/media/mysql.9abfc316.png",
     "static/media/nodejs.png": "/static/media/nodejs.f9f5d492.png",
+    "static/media/person.jpg": "/static/media/person.5b11805f.jpg",
     "static/media/php.png": "/static/media/php.b187e3b1.png",
     "static/media/react.png": "/static/media/react.e1eb5856.png"
   },
@@ -33,7 +33,7 @@
     "static/js/runtime-main.27d26031.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.f40df60a.chunk.js",
-    "static/css/main.b897fa87.chunk.css",
-    "static/js/main.79e57eab.chunk.js"
+    "static/css/main.85f9f433.chunk.css",
+    "static/js/main.cfbe7f40.chunk.js"
   ]
 }
